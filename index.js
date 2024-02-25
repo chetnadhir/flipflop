@@ -15,3 +15,8 @@ document.getElementById('textToSpeechButton').addEventListener('click', () => {
         }
     }
 });
+  const range = document.createRange();
+    range.selectNodeContents(document.body);
+    window.getSelection().removeAllRanges(); // Clear previous selection
+    window.getSelection().addRange(range); // Select the new text
+});
