@@ -138,12 +138,20 @@ b::selection{
   background-color: yellow;
   }
   
-  img:hover {
-    border-radius: 10px ; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-    transform: scale(1.05); 
-    transition: transform 0.3s ease; 
+  img {
+  max-width: 100%; 
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease; 
 }
+
+img:hover {
+  transform: scale(1.05); 
+}
+
 
 table {
   width: 50vmin;
