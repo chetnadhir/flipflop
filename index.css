@@ -1,0 +1,181 @@
+h1::selection{
+background-color: black;
+color: white;
+}
+
+p {
+  font-size: 20px;
+
+}
+
+p::selection{
+  background-color: yellow;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    padding: 15px; 
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    padding: 10px; 
+  }
+  
+}
+
+br::selection{
+  background-color: white;
+  }
+h7{
+  font-size: 20px;
+}
+h7::selection{
+  background-color: yellow;
+  }
+
+  h4{
+    font-size: 20px;
+  }
+  h4::selection{
+    background-color: yellow;
+    }
+    h3{
+      font-size: 20px;
+    }
+    h3::selection{
+      background-color: yellow;
+      }
+  
+      img::selection{
+        background-color: whitesmoke;
+        }
+
+ td::selection{
+   background-color: yellow;
+ }
+ th::selection{
+  background-color: yellow;
+}
+h7:hover{
+ color: #3c096c;
+}
+li:hover{
+color:#fb6f92;
+cursor:pointer;
+}
+li::selection{
+ background-color: yellow;
+}
+
+ol {
+  list-style-type: 1;
+  counter-reset: item;
+}
+
+ol li {
+  counter-increment: item;
+  padding: 5px;
+}
+
+ol li:nth-child(1):hover {
+  color: #0257ac; 
+}
+
+ol li:nth-child(2):hover {
+  color: #1e88e5; 
+}
+
+ol li:nth-child(3):hover {
+  color: #44a8f9; 
+}
+
+ol li:nth-child(4):hover {
+  color: #71baf6;
+}
+
+ol li:nth-child(5):hover {
+  color: #92ccfb; 
+}
+
+ol li:nth-child(6):hover {
+  color: lightblue; 
+}
+
+/* unvisited link */
+a:link {
+  color: #00008B;
+  text-decoration: none;
+}
+
+a::selection{
+   background-color: lightblue;
+}
+/* visited link */
+a:visited {
+  color: #0257ac;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF1493 ;
+  text-decoration: none;
+}
+
+
+a:active {
+  color:  #4169E1;
+  text-decoration: none;
+}
+
+b::selection{
+  background-color: yellow;
+  }
+  
+  img:hover {
+    border-radius: 10px ; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    transform: scale(1.05); 
+    transition: transform 0.3s ease; 
+}
+
+table {
+  width: 50vmin;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+table:hover{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+table::selection{
+  background-color: yellow;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+button{
+  background-color: lightpink;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  border: solid white;
+  size: 30px;
+}
+button:hover{
+background-color: lightblue;
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}

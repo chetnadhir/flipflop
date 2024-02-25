@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flip-flops</title>
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <button id="textToSpeechButton">audio</button>
+  <h1>Flip-flops</h1>
+  <p>It is the most fundamental storage device which can store one bit of binary information 0 or 1.</p>
+ <br>
+ <h7>flip-flop circuit has two outputs </h7>
+ <ul type="square">
+<li>one for normal value</li>
+<li>one for the complementary value</li>
+ </ul>
+ <p>
+ a flip-flop can be obtained by using NAND OR NOR gates.
+ </p>
+ <h3>TYPES OF FLIP FLOP</h3>
+ <ol type="1">
+  <li><a href="#srflipflop">S-R flip-flop</a></li>
+  <li><a href="#clockedsrff">Clocked S-R Flip-Flop</a></li>
+  <li><a href="#jk">J-K flip-flop</a></li>
+  <li><a href="#msjk">Master Slave flip flop</a></li>
+  <li><a href="#Dff">D flip-flop</a></li>
+  <li><a href="#ttype">T flip-flop</a></li>
+</ol>
+<div id="srflipflop">
+  <h4>S-R Flip-Flop</h4>
+  <p>the most findamental latch is simple SR latch or SR flip flop, where S & R stand for <b>set</b> & <b>reset</b>. It can be constructed with the help of latch and two more NAND gates.</p>
+
+<img src="data:image/png;base64,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" alt="SYMBOL">
+<p>the symbol of S-R flip flop </p>
+<img src="srflipflop.png" alt="diagram">
+
+<p>the truth table for the same is :-</p>
+<table border="1">
+  <tr> 
+    <th> S </th>
+    <th> R </th>
+    <th> Q </th>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>no change</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>0 (reset) </td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>0</td>
+    <td>1 (set) </td>
+  </tr>
+<tr>
+  <td>1</td>
+  <td>1</td>
+  <td>not valid </td>
+</tr>
+</table>
+<img src="CASE1.png" alt="CASE DIAGRAM">
+<h2>Case 1 - S = 0 , R = 1</h2>
+<ul>
+    <li>S = 0 , R = 1 , Q = 0</li>
+    <li>S = 0 , R = 1 , Q = 0</li>
+    <li>LET S = 0 , R = 1 , Q = 0</li>
+</ul>
+<p>When S = 0, the output of gate G-3 = 1.
+  When R = 1, the output of gate G-4 = 0.
+  Therefore, both inputs of gate G-2 are (0, 0), which makes Q' = 1.
+  Now, both inputs of gate G-1 are (1, 1), which makes Q = 0.
+  Hence, this case gives stable outputs as Q = 0 and Q' = 1.
+  </p>
+</div>
+
+<div id="clockedsrff">
+  <h4>Clocked S-R Flip-Flop</h4>
+  <p> It is often required to set or reset the memory cell in synchronism with a train of pulses known as clock (CLK). 
+    If  a clock input is added to a S-R flip flop , then a clocked S-R flip-flop is obtained.
+
+
+  </p>
+  <img src="https://www.worldofcomputing.net/wp-content/uploads/2015/04/SR-flip-flop-symbol.jpg"alt="symbol">
+  <p>symbol of clocked S-R flip-flop</p>
+  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230707010229/Screenshot-2023-07-07-005940.png" alt="clocked srflopflop diagram ">
+  <p>the truth table for clocked S-R flip flopis :-</p>
+  <table border="1">
+    <tr> 
+      <th> S </th>
+      <th> R </th>
+      <th> Q </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>no change</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>0 (reset state) </td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>1 (set state) </td>
+    </tr>
+  <tr>
+    <td>1</td>
+    <td>1</td>
+    <td>forbidden </td>
+  </tr>
+  </table>
+</div>
+<h3>Application of S-R flip flop </h3>
+<ul>
+  <li>they are very <b> simple and basic.</b></li>
+  <li>they are simple but are not used much because of their <b>forbidden state</b> where (S=R=1)</li>
+  <li>they are mainly used in switching circuits , as they provide simple and efficient <b>switching function</b> between set and reset states </li>
+ <li> S-R flip flops are used to <b>eliminate mechanical bounce of switches</b> in digital circuits . when mechanical switches are pressed or released , they often take some time and vibrate several times before setting down .this non ideal behaviour of the switch is called <b>switch bounce or mechanical bounce .</b> By using a clocked S-R flip flop in such switches the switch will come to use only after an  recieving a clock pulse signal </li>
+</ul>
+<div id="jk">
+<h4>J-K flip-flop</h4>
+<p>The uncertainity in the state of S-R flip flop when  S=R=1 can be eliminated by conveting it into a J-K flip flop . it is  an imp memory element that behaves  like SR  flip flop  except  in the situation where S=R=1 . J-K flip flop is the improved version of S-R flip flop. the  S=R=1 state of S-R flip flop is converted to toggling state in J-K flip flop. JK means Jack Kilby , a texas instrument engineer who invented IC(intergrated circuits )</p>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6x_ym1GOqysd5q9DckdtGsq-rCN9hKTvcxA&usqp=CAU" alt="jk flopflop symbol ">
+<img src="JKFLIPFLOP.jpg" alt="jk flopflop diagram ">
+<p>
+  Two additional AND gates are ussed with S-R flip flop to design J-K flip flop. the data inputs of J-K and ANDed with Q & Q' respectively to obtain i.e. <b>S =J. Q' </b> and  <b>R = K.Q</b>. A clock signal is passed to both the AND gates for synchronizing i.e. enabling and disabling the flipflop operation.
+</p>
+<img src="https://gs-post-images.grdp.co/2022/7/jk-flip-flop-img1657880657870-71.png-rs-high-webp.png">
+<p>When J = K = 0 => S = R = 0 irrespective of the value of  Q & Q' . this results in both zero as input to the next part of the circuit (i.e. SR flipflop part of the JK flipflop ).The flip flop will retain its last output value with no change.</p>
+<p>the truth table for clocked J-K flip flop is :-</p>
+<table border="1">
+  <tr> 
+    <th> S </th>
+    <th> R </th>
+    <th> Q </th>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>no change</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>0 (reset state) </td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>0</td>
+    <td>1 (set state) </td>
+  </tr>
+<tr>
+  <td>1</td>
+  <td>1</td>
+  <td>toggle </td>
+</tr>
+</table>
+</div>
+<h4>Application of S-R flip flop </h4>
+<ul>
+<li>JK flipflop is most widely used type of flip flop, it is considered as universal flipflop </li>
+<li> it is used as a main component for designing :-</li>
+</ul>
+  <ol type = "1">
+ <li>counters</li>
+ <li>registers</li>
+ <li>sequence detector </li>
+ <li>frequency divider </li>
+  </ol>
+<h4>Race around condition of jk flip flop </h4>
+<p>The difficulty of both inputs 1 being not allowed in an S-R  flip flop is eliminated in a J-K flipflop by using feedback connection from outputs to inputs of the gates G-3 and G-4. The The J=K=1 state is called toggling output state or uncontrolled changing i.e. a racing condition in JK flip flop truth table for JK flip flop assumes that the inputs do not change during the clock pulse (CK master=1), which is not true  beacuse of the feedback connections.<br>
+  <br>
+  <p>A more practical method for overcoming the difficulty (to satisfy the inequality of small propoation delays in integrated circuits by using  edge triggering rather than level triggering ), if the flip flop is made to toggle over one clock period . This approach leads to the use of the master-slave configuration . </p</div>
+
+    <div id="msjk">
+   <h3>Master - slave flip flop</h3>
+    <p>A master slave jk flip flop is a cascade of two S-R flip flops with feedback from the outputs of the second  to the inputs of the first. 
+    so the first is called master and second is called slave. Positive clock pulses are applied to the first flip flop.</p>
+<p>If J=K=0 there will be no change in the output value.- When the clock = 0 , the master will be inactice and so the saleve becomes active.
+</p>
+<img src="masterslave.jpg">
+<ul>
+ <li>if J=K=0 there will be no change in the output value </li> 
+  <li>if J=0 & K=1, the output will be reset state</li> 
+  <li>J=1 & K=0, the output will be set state </li>
+  <li>  if J=K=1 the output toggles </li>
+</ul>
+<p>the truth table for the same is :-</p>
+<table border="1">
+  <tr> 
+    <th>CK </th>
+    <th> J </th>
+    <th> K </th>
+    <th> Q </th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Qn</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0 (reset) </td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1 (set) </td>
+  </tr>
+<tr>
+  <td>1</td>
+  <td>1</td>
+  <td>1</td>
+  <td>Qn'</td>
+</tr>
+</table> </div>
+<div id="Dff">
+  <h3> D Type flip flop </h3>
+  <p>The Delay type flip - flop can be contructed using either S-R flip flop ,J K flip flop or master slave flip flop. It has only one input referred to as D- type or data input. However , an invertor is attached between two inputs of flip flop i.e. both the inputs of flipflop cannot be same. </p>
+  <img src="Dtype.jpg" alt="D-type flip-flop image">
+  <p>
+    By using a NOT gate between the two inputs of SR flip flop , we can set or reset the flip flop by using single input only. D type flip flop can receive complemented inputs only , as two inputs are connected by a NOT gate.
+  </p>
+  <h4>Truth Table for D-Type Flip-Flop</h4>
+  <table border="1">
+      <thead>
+          <tr>
+              <th>D</th>
+              <th>Q</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>0</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>1</td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+<div id="ttype">
+  <h3> T type flip flop</h3> 
+  <p>In a J-K flip-flop, if J = K, the resulting flip-flop is referred to as a T-type flip-flop. It has only one input, referred to as T-input. If T = 1, it acts as a toggle switch. For every clock pulse, the output Q changes.</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/T-Type_Flip-flop.svg/1200px-T-Type_Flip-flop.svg.png" width="200">
+  <table border="1">
+    <thead>
+        <tr>
+            <th>T</th>
+            <th>Qn +1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Qn</td>
+            <td>Qn'</td>
+        </tr>
+    </tbody>
+  </table>
+  <p>When T=0, J=0, K=0 hence the output and the input remain the same. When T = 1, then J=1, K=1, output is complement of the input i.e. it toggles. That is why it is called a toggles (T) flip flop.</p>
+</div>
+  <script src="index.js"></script>
+</body>
+
