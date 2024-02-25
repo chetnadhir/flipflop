@@ -13,25 +13,18 @@ p::selection{
 }
 
 body {
-  margin: 0;
+  margin: 20px;
   padding: 20px;
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
 }
 
-@media only screen and (max-width: 1000px) {
-  body {
-    padding: 15px; 
-  }
-  
-}
 
-@media only screen and (max-width: 600px) {
-
-  body {
-    padding: 10px; 
-  }
-  
+/* Media query for smaller screen sizes (e.g., phones) */
+@media screen and (max-width: 600px) {
+    body {
+        margin: 10px; /* Adjust margin for smaller screens */
+    }
 }
 
 br::selection{
