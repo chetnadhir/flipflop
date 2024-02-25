@@ -1,6 +1,5 @@
 let isPaused = false;
 let speech = null;
-
 document.getElementById('textToSpeechButton').addEventListener('click', () => {
     const text = document.body.innerText;
     if (!speech) {
@@ -17,12 +16,3 @@ document.getElementById('textToSpeechButton').addEventListener('click', () => {
     }
 });
 
-// Mobile
-document.body.addEventListener('click', () => {
-    if (!speech) {
-        // Trigger speech synthesis on the first user interaction
-        const text = document.body.innerText;
-        speech = new SpeechSynthesisUtterance(text);
-        speechSynthesis.speak(speech);
-    }
-});
