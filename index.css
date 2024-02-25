@@ -149,7 +149,7 @@ b::selection{
 }
 
 img:hover {
-  transform: scale(0.05); 
+  transform: scale(1.05); 
 }
 
 
