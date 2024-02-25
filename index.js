@@ -1,4 +1,4 @@
-let isPaused = false;
+/*let isPaused = false;
 let speech = null;
 document.getElementById('textToSpeechButton').addEventListener('click', () => {
     const text = document.body.innerText;
